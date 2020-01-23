@@ -76,6 +76,8 @@ namespace Calculator_L
 
         private void btn_del_Click(object sender, EventArgs e)
         {
+            if (textBox1.Text == "")
+                return;
             int index = textBox1.Text.IndexOf("=");
             if (index == -1)
             {
